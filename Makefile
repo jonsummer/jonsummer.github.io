@@ -7,7 +7,7 @@ doctor:
 	@bundle exec jekyll doctor 
 
 run: build
-	@bundle exec jekyll serve --livereload
+	@bundle exec jekyll serve --livereload --drafts
 
 config: 
 	@bundle config set --local path 'vendor/bundle'              
