@@ -12,6 +12,8 @@ repository: "jonsummer/jonsummer.github.io"
 # Theme
 # local include
 #theme: minimal-mistakes-jekyll
+# remote theme
+remote_theme: "mmistakes/minimal-mistakes@4.21.0"
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 locale: "zh-CN" #"en-US"
 timezone: "Asia/Shanghai"
