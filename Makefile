@@ -22,3 +22,7 @@ clean:
 
 release:
 	JEKYLL_ENV=production bundle exec jekyll build
+
+github:
+	@git commit -m 'rebuild pages' --allow-empty
+	@git push
