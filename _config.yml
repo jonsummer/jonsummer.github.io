@@ -1,71 +1,129 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+#doc https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 
-#title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+# Basic Info
+url: "https://jonsummer.github.io"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jonsummer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-#github_username:  jekyll
+title: "Jon Summer's Blog" # the name of your site, e.g. ACME Corp.
+title_separator: "|"
+name: "Jon Summer"
+description: "A Blog for Jon Summer"
+repository: "jonsummer/jonsummer.github.io"
 
-# Build settings
-# theme: minima
-#theme: jekyll-theme-hacker
-#theme: minimal-mistakes-jekyll
-#remote_theme: "mmistakes/minimal-mistakes@4.21.0"
-#remote_theme: "mmistakes/minimal-mistakes"
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-collections:
-  authors:
-    output: true
+# Theme
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+locale: "zh-CN" #"en-US"
+timezone: "Asia/Shanghai"
+words_per_minute: 250
 
+# Default Config
 defaults:
+  # _posts
   - scope:
       path: ""
-      type: "authors"
+      type: posts
     values:
-      layout: "author"
+      layout: single
+      author: Jon Summer
+      author_profile: true
+      read_time: true
+      share: false
+      related: true
+      show_date: true
+      comments: false
+      sidebar:
+        nav: "posts"
+      toc: true
+  # _pages
   - scope:
       path: ""
-      type: "posts"
+      type: pages
     values:
-      layout: "post"
+      layout: single
+      author_profile: true
+  # _docs
   - scope:
       path: ""
+      type: docs
     values:
-      layout: "default"
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
+      layout: single
+      author_profile: true
+
+#permalink: /:categories/:year/:month/:day/:title/
+#permalink: pretty
+permalink: /:categories/:title/
+
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+  recipes:
+    output: false
+    permalink: /:collection/:path/
+  pets:
+    output: false
+    permalink: /:collection/:path/
+  portfolio:
+    output: false
+    permalink: /:collection/:path/
+
+comments:
+  provider: "false"
+  utterances:
+    theme: "github-dark" # "github-dark"
+    issue_term: "pathname"
+
+
+head_scripts:
+  #- https://code.jquery.com/jquery-3.2.1.min.js
+
+teaser: "/assets/images/500x300.png"
+logo: "/assets/images/88x88.png"
+breadcrumbs: true
+breadcrumb_home_label : "Home"
+breadcrumb_separator  : "|"
+
+search: true
+search_full_content      : true
+
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "http://github.com/jonsummer/"
+    - label: "Terms"
+      url: /terms/
+    - label: "Sitemap"
+      url: /sitemap/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+include:
+  - .htaccess
+  - _pages
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -79,3 +137,14 @@ exclude:
   - vendor/ruby/
   - Makefile
   - .vscode/
+
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development  # disable compression in dev environment

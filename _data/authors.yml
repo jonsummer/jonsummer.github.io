@@ -1,0 +1,11 @@
+Jon Summer:
+  name        : "Jon Summer"
+  bio         : "a coder"
+  avatar      : "/assets/images/bio-photo-2.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://jonsummer.github.io"

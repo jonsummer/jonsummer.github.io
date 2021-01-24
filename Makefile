@@ -9,7 +9,8 @@ doctor:
 run: build
 	@bundle exec jekyll serve --livereload --drafts
 
-config: 
+init: 
+	@bundle init
 	@bundle config set --local path 'vendor/bundle'              
  
 update:
