@@ -10,7 +10,8 @@ description: "A Blog for Jon Summer"
 repository: "jonsummer/jonsummer.github.io"
 
 # Theme
-theme: minimal-mistakes-jekyll
+# local include
+#theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 locale: "zh-CN" #"en-US"
 timezone: "Asia/Shanghai"
