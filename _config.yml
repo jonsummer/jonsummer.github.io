@@ -149,3 +149,8 @@ compress_html:
   clippings: all
   ignore:
     envs: development  # disable compression in dev environment
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed 
