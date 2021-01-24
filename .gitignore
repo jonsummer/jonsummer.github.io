@@ -6,3 +6,4 @@ vendor
 .vscode
 Gemfile.lock
 .DS_Store
+_config.yml
