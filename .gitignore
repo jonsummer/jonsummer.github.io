@@ -7,3 +7,7 @@ vendor
 Gemfile.lock
 .DS_Store
 _config.yml
+build
+*.egg-info
+dist
+*.pyc
