@@ -205,3 +205,8 @@ include Makefile
 global-exclude *.py[cod]
 ```
 
+## Conclusion
+
+In this post, we studied how to struct a python library to provide some funciton to other users, and the whole code will be accessed through the following link.
+
+[https://github.com/jonsummer/jonsummer.github.io/tree/main/assets/code/python/py_lib_root](https://github.com/jonsummer/jonsummer.github.io/tree/main/assets/code/python/py_lib_root)
