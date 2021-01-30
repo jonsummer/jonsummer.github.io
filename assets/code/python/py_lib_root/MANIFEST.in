@@ -1,0 +1,3 @@
+graft tests
+include Makefile
+global-exclude *.py[cod]
