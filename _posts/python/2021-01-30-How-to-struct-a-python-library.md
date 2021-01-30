@@ -1,21 +1,21 @@
 ---
-title:  "How to struct a python library"
+title:  "How to create a python library"
 date:   2021-01-30
 categories: 
   - Python
 tags:
   - Project
 excerpt: >
-  In this post, I would like to explain what is the basic directory structure for a python library.
+  In this post, I would like to explain the basic directory structure for a python library.
 ---
 
 ## Introduction
 
-If we want to provide a python library to others, it is best way that we create a pip package. Then anyone who need the library will use pip to install that package. So, the question is, how to struct a python library. In this post, I would like to explain what is the basic directory structure for a python library.
+If we want to provide a python library to others, the best way is to create a pip package. Then anyone who needs the library will use pip to install that package.  In this post, I would like to explain the basic directory structure for a python library.
 
 ## Standard
 
-Almost every python project apply pip to manage dependencies. The first step to solve the problem is to find what is the standard that pip used. The following link explains the basic concept for `setup.py`.
+Almost every python project applies pip to manage dependencies. The first step to solve the problem is to find the standard that pip used. The following link explains the basic concept for `setup.py`.
 
 [https://docs.python.org/3/distutils/setupscript.html](https://docs.python.org/3/distutils/setupscript.html)
 
@@ -207,6 +207,6 @@ global-exclude *.py[cod]
 
 ## Conclusion
 
-In this post, we studied how to struct a python library to provide some funciton to other users, and the whole code will be accessed through the following link.
+In this post, we learned how to create a python library to provide some funciton to other users, and the complete code could be accessed through the following link.
 
 [https://github.com/jonsummer/jonsummer.github.io/tree/main/assets/code/python/py_lib_root](https://github.com/jonsummer/jonsummer.github.io/tree/main/assets/code/python/py_lib_root)
