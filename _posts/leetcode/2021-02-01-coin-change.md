@@ -1,5 +1,5 @@
 ---
-title:  "leetcode-322: Coin Change"
+title:  "leetcode-cn-322: Coin Change"
 date:   2021-02-01
 categories: 
   - Leetcode
