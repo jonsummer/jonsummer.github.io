@@ -1,6 +1,6 @@
 ---
-title:  "leetcode-cn-494. Target Sum"
-date:   2021-02-13
+title:  "leetcode-cn-887. Super Egg Drop"
+date:   2021-02-14
 categories: 
   - Leetcode
 tags:
