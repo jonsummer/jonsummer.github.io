@@ -1,6 +1,6 @@
 ---
 title:  "leetcode-cn-235. Lowest Common Ancestor of a Binary Search Tree"
-date:   2021-02-15
+date:   2021-02-18
 categories: 
   - Leetcode
 tags:
