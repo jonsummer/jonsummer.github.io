@@ -58,7 +58,7 @@ public:
             return right;
         }
         if (left!=NULL && right==NULL){
-            return right;
+            return left;
         }
         return NULL;
     }
