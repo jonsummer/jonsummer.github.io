@@ -1,5 +1,5 @@
 ---
-title:  "leetcode-cn-剑指 Offer 05. 替换空格"
+title:  "leetcode-cn-剑指 Offer 06. 从尾到头打印链表"
 date:   2021-02-19
 categories: 
   - Leetcode
